@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Mixer</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        gap: 15px;
+      }
+      input {
+        font-size: 26px;
+      }
+      input::placeholder {
+        font-size: 24px;
+      }
+
+      button {
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      id="color1"
+      type="text"
+      placeholder="Color 1: blue, red and yellow"
+    />
+    <input
+      id="color2"
+      type="text"
+      placeholder="Color 1: blue, red and yellow"
+    />
+    <button>Color Mix</button>
+    <p></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
