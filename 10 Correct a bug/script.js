@@ -14,7 +14,7 @@ function nikeshoe() {
     qt.setAttribute('type', 'number');
     qt.setAttribute('min', 1);
     qt.setAttribute('name', 'nik');
-    qt.setAttribute('value', 1);
+    qt.setAttribute('value', 0.5 * 2);
     qt.style.width = '35px';
     qt.className = 'nik';
     // qt.type = 'number';
@@ -27,15 +27,14 @@ function nikeshoe() {
     di.appendChild(qt);
     di.appendChild(del);
 
-    quantity = Number(qt.value);
-
     del.addEventListener('click', () => {
       qty = 0;
       di.remove();
     });
   } else {
     let vall = document.querySelector('.nik');
-    vall.value++;
+    let i = Number(vall.value);
+    vall.value = i + 1;
   }
 }
 
@@ -53,7 +52,7 @@ function adidasshoe() {
     ele.textContent = 'Adidas shoe';
     qt.setAttribute('type', 'number');
     qt.setAttribute('min', 1);
-    qt.setAttribute('value', 1);
+    qt.setAttribute('value', 0.5 * 2);
     qt.style.width = '35px';
     qt.className = 'adi';
     // qt.type = 'number';
@@ -71,7 +70,8 @@ function adidasshoe() {
     });
   } else {
     let vall = document.querySelector('.adi');
-    vall.value++;
+    let i = Number(vall.value);
+    vall.value = i + 1;
   }
 }
 
@@ -89,7 +89,7 @@ function pumashoe() {
     ele.textContent = 'Puma shoe';
     qt.setAttribute('type', 'number');
     qt.setAttribute('min', 1);
-    qt.setAttribute('value', 1);
+    qt.setAttribute('value', 0.5 * 2);
     qt.style.width = '35px';
     qt.className = 'pum';
     // qt.type = 'number';
@@ -107,6 +107,7 @@ function pumashoe() {
     });
   } else {
     let vall = document.querySelector('.pum');
-    vall.value++;
+    let i = Number(vall.value);
+    vall.value = i + 1;
   }
 }
