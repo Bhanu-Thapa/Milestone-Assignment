@@ -19,22 +19,23 @@ let btn = document.querySelector('button');
 let msg = document.querySelector('h2');
 
 btn.addEventListener('click', () => {
-  let nday = Number(nd.value);
   fun(ct.value, nd.value);
 });
 
-function fun(nday, ctype) {
-  // nday = Number(nday);
-  console.log(nday);
-  console.log(ctype);
+function fun(ctype, nday) {
+  nday = Number(nday);
+
   let tc = 0;
 
   if (ctype == eco.car) {
     tc = eco.cost * nday;
+    msg.innerText = `Rs ${tc}`;
   } else if (ctype == mid.car) {
     tc = mid.cost * nday;
+    msg.innerText = `Rs ${tc}`;
   } else if (ctype == lux.car) {
     tc = lux.cost * nday;
+    msg.innerText = `Rs ${tc}`;
   } else {
     tc = console.log('invalid');
   }
