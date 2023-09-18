@@ -1,10 +1,9 @@
 let product = 500;
-let dis = 20;
+let disprice = 400;
 
 let fun = () => {
-  let disprice = product - (product / 100) * 20;
-  console.log(`Original Price ${product}`);
-  console.log(`Discount Price ${disprice}`);
+  let dis = (100 * (product - disprice)) / product;
+  console.log(`${dis}%`);
 };
 
 fun();
