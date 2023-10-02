@@ -1,11 +1,12 @@
-let str = 'hello@gamil.com';
-let pas = 'asdf4fasdf';
+let str = document.querySelector('#email');
+let pas = document.querySelector('#password');
+let msg = document.querySelector('p');
+let sub = document.querySelector('button');
 
-for (let x of str) {
-  if (x == '@' && pas.length > 8) {
-    console.log('valid email and password');
-  } else {
-    console.log('Invalid email or password');
-    break;
-  }
-}
+sub.addEventListener('click', () => {
+  str.value.match('@') && pas.value.length > 8
+    ? ((msg.innerText = 'Valid email and password!'),
+      (msg.style.color = 'green'))
+    : ((msg.style.color = 'red'),
+      (msg.innerText = 'Invalid email or password!'));
+});
